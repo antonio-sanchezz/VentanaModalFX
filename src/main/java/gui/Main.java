@@ -13,7 +13,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("viewsandcontrollers/main/Main.fxml"));
+    	// Cargar ventana modal.
+        //Parent root = FXMLLoader.load(getClass().getResource("viewsandcontrollers/main/Main.fxml"));
+    	// Cargar calculadora.
+    	Parent root = FXMLLoader.load(getClass().getResource("viewsandcontrollers/calculadora/Calculadora.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
